@@ -7,10 +7,10 @@ class SpaceCraft{
   void describe() {
     print('Spacecraft: $name');
     // Type promotion doesn't work on getters.
-    var launchDate = this.launchDate;
+    var launchDate = this.launch_date;
     if (launchDate != null) {
       int years = DateTime.now().difference(launchDate).inDays ~/ 365;
-      print('Launched: $launchYear ($years years ago)');
+      print('Launched: $launch_year ($years years ago)');
     } else {
       print('Unlaunched');
     }

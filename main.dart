@@ -1,3 +1,5 @@
+import 'data.dart';
+
 void main() {
   print('Hello World!');
   print("hello my name is shibero");
@@ -15,6 +17,8 @@ void main() {
   }
   var fib = fibonacci(20);
   print("the fibonacci of 20 is "+fib.toString());
+  var apollo11 = SpaceCraft("Apollo", DateTime(1969, 8, 12));
+  apollo11.describe();
 }
 
 int fibonacci(int n){
