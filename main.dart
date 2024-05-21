@@ -13,4 +13,11 @@ void main() {
     print(rem.toString()+ " to 2024");
     year++;
   }
+  var fib = fibonacci(20);
+  print("the fibonacci of 20 is "+fib.toString());
+}
+
+int fibonacci(int n){
+  if(n == 0 || n == 1) return n;
+  return fibonacci(n - 1) + fibonacci(n - 2);
 }
